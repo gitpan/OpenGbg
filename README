@@ -1,0 +1,71 @@
+NAME
+    OpenGbg - An interface to the Open Data API of Gothenburg
+
+SYNOPSIS
+        use OpenGbg;
+
+        my $opengbg = OpenGbg->new(key => 'secret-api-key');
+
+        $response = $opengbg->styr_och_stall->get_bike_stations;
+
+        print $response->stations->get_by_index(0)->to_text;
+
+DESCRIPTION
+    OpenGbg is a way to connect to and use the open data published by the
+    city of Gothenburg <https://en.wikipedia.org/wiki/Gothenburg>.
+
+    The open data homepage is located at <http://data.goteborg.se/>. All
+    official documentation is in Swedish, but the license agreement is
+    published in English here <https://gbgdata.wordpress.com/goopen/>.
+
+    To use the API you need to get a free api key.
+
+METHOD
+  new()
+    Takes an optional key-value pair, the key is "key" and the value your
+    api key, see authenticate.
+
+    Returns a OpenGbg::Handler object. This object is not interesting in
+    itself, see each service under services for usage.
+
+AUTHENTICATE
+    Once you have your api key you can use it in two different ways:
+
+    1. You can give it in the constructor:
+
+        my $opengbg = OpenGbg->new(key => 'secret-api-key');
+
+    2. You can save it in a file named ".opengbg.ini" in your homedir:
+
+        [API]
+        key = secret-api-key
+
+SERVICES
+    The following services are currently implemented in this distribution:
+
+    StyrOchStall - Data on rent-a-bike stations
+
+NAMING
+    All names related to the services are de-camelized. For example, the
+    service 'GetBikeStations' is called like this:
+
+        my $gbg = OpenGbg->new;
+        my $stations = $gbg->get_bike_stations;
+
+BUGS & ISSUES
+    The repository and issue tracker is at:
+    <https://github.com/Csson/p5-OpenGbg>
+
+DISCLAIMER
+    This is not an official distribution.
+
+AUTHOR
+    Erik Carlsson <info@code301.com>
+
+COPYRIGHT
+    Copyright 2014 - Erik Carlsson
+
+LICENSE
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
