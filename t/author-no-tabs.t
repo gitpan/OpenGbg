@@ -19,6 +19,11 @@ my @files = (
     'lib/OpenGbg/Exception.pm',
     'lib/OpenGbg/Exception/BadResponseFromService.pm',
     'lib/OpenGbg/Handler.pm',
+    'lib/OpenGbg/Service/AirQuality.pm',
+    'lib/OpenGbg/Service/AirQuality/GetLatestMeasurement.pm',
+    'lib/OpenGbg/Service/AirQuality/GetMeasurements.pm',
+    'lib/OpenGbg/Service/AirQuality/Measurement.pm',
+    'lib/OpenGbg/Service/AirQuality/Measurements.pm',
     'lib/OpenGbg/Service/Getter.pm',
     'lib/OpenGbg/Service/StyrOchStall.pm',
     'lib/OpenGbg/Service/StyrOchStall/GetBikeStation.pm',
@@ -27,7 +32,8 @@ my @files = (
     'lib/OpenGbg/Service/StyrOchStall/Stations.pm',
     'lib/OpenGbg/Standard/Moops.pm',
     'lib/OpenGbg/Types.pm',
-    't/01-styrochstall.t'
+    't/01-styrochstall.t',
+    't/02-air-quality.t'
 );
 
 notabs_ok($_) foreach @files;

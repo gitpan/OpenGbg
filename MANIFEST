@@ -9,10 +9,16 @@ README
 cpanfile
 dist.ini
 examples/01-styr-och-stall.pl
+examples/02-airquality-1.pl
 lib/OpenGbg.pm
 lib/OpenGbg/Exception.pm
 lib/OpenGbg/Exception/BadResponseFromService.pm
 lib/OpenGbg/Handler.pm
+lib/OpenGbg/Service/AirQuality.pm
+lib/OpenGbg/Service/AirQuality/GetLatestMeasurement.pm
+lib/OpenGbg/Service/AirQuality/GetMeasurements.pm
+lib/OpenGbg/Service/AirQuality/Measurement.pm
+lib/OpenGbg/Service/AirQuality/Measurements.pm
 lib/OpenGbg/Service/Getter.pm
 lib/OpenGbg/Service/StyrOchStall.pm
 lib/OpenGbg/Service/StyrOchStall/GetBikeStation.pm
@@ -22,6 +28,7 @@ lib/OpenGbg/Service/StyrOchStall/Stations.pm
 lib/OpenGbg/Standard/Moops.pm
 lib/OpenGbg/Types.pm
 t/01-styrochstall.t
+t/02-air-quality.t
 t/author-no-tabs.t
 t/author-test-eol.t
 t/release-pod-syntax.t

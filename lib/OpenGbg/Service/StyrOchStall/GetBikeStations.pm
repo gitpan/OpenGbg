@@ -1,7 +1,7 @@
 use 5.14.0;
 
 package OpenGbg::Service::StyrOchStall::GetBikeStations;
-$OpenGbg::Service::StyrOchStall::GetBikeStations::VERSION = '0.1000';
+$OpenGbg::Service::StyrOchStall::GetBikeStations::VERSION = '0.1100';
 use OpenGbg::Types -types;
 use XML::Rabbit::Root;
 use DateTime::Format::HTTP;
@@ -49,7 +49,7 @@ OpenGbg::Service::StyrOchStall::GetBikeStations
     my $service = $styr_och_stall->get_bike_stations;
 
     printf 'Time: %s', $service->timestamp;
-    print $service->stations->get(5)->to_text;
+    print $service->stations->get_by_index(5)->to_text;
 
 =head1 METHODS
 
