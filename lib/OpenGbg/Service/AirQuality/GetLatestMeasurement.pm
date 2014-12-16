@@ -1,7 +1,7 @@
 use 5.14.0;
 
 package OpenGbg::Service::AirQuality::GetLatestMeasurement;
-$OpenGbg::Service::AirQuality::GetLatestMeasurement::VERSION = '0.1100';
+$OpenGbg::Service::AirQuality::GetLatestMeasurement::VERSION = '0.1101';
 use OpenGbg::Types -types;
 use Kavorka;
 use XML::Rabbit::Root;
@@ -32,10 +32,10 @@ OpenGbg::Service::AirQuality::GetLatestMeasurement
 
 =head1 SYNOPSIS
 
-    my $aq = OpenGbg->new->air_quality;
-    my $service = $aq->get_latest_measurement;
+    my $service = OpenGbg->new->air_quality;
+    my $response = $service->get_latest_measurement;
 
-    print $service->measurement->to_text;
+    print $response->measurement->to_text;
 
 =head1 METHODS
 

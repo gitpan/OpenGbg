@@ -1,7 +1,7 @@
 use 5.14.0;
 
 package OpenGbg::Service::StyrOchStall::GetBikeStation;
-$OpenGbg::Service::StyrOchStall::GetBikeStation::VERSION = '0.1100';
+$OpenGbg::Service::StyrOchStall::GetBikeStation::VERSION = '0.1101';
 use OpenGbg::Types -types;
 use Kavorka;
 use XML::Rabbit::Root;
@@ -49,11 +49,11 @@ OpenGbg::Service::StyrOchStall::GetBikeStation
 
 =head1 SYNOPSIS
 
-    my $styr_och_stall = OpenGbg->new->styr_och_stall;
-    my $service = $styr_och_stall->get_bike_station(1);
+    my $service = OpenGbg->new->styr_och_stall;
+    my $response = $service->get_bike_station(1);
 
-    printf 'Time: %s', $service->timestamp;
-    print $service->station->to_text;
+    printf 'Time: %s', $response->timestamp;
+    print $response->station->to_text;
 
 =head1 METHODS
 

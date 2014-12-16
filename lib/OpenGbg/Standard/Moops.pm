@@ -1,7 +1,7 @@
 use 5.14.0;
 
 package OpenGbg::Standard::Moops {
-$OpenGbg::Standard::Moops::VERSION = '0.1100';
+$OpenGbg::Standard::Moops::VERSION = '0.1101';
 use base 'Moops';
     use OpenGbg::Types();
     use MooseX::AttributeShortcuts();

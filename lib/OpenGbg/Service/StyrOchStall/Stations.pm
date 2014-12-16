@@ -1,7 +1,7 @@
 use 5.14.0;
 
 package OpenGbg::Service::StyrOchStall::Stations;
-$OpenGbg::Service::StyrOchStall::Stations::VERSION = '0.1100';
+$OpenGbg::Service::StyrOchStall::Stations::VERSION = '0.1101';
 use XML::Rabbit;
 use Kavorka;
 
@@ -34,8 +34,8 @@ OpenGbg::Service::StyrOchStall::Stations - A list of Styr och Ställ stations
 
 =head1 SYNOPSIS
 
-    my $sos = OpenGbg->new->styr_och_stall;
-    my $response = $sos->get_bike_stations;
+    my $service OpenGbg->new->styr_och_stall;
+    my $response = $service->get_bike_stations;
 
     printf 'Time: %s', $response->timestamp;
     print $response->stations->get_by_index(5)->to_text;
