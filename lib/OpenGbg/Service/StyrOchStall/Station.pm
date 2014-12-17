@@ -1,9 +1,9 @@
 use 5.14.0;
 
 package OpenGbg::Service::StyrOchStall::Station;
-$OpenGbg::Service::StyrOchStall::Station::VERSION = '0.1101';
+$OpenGbg::Service::StyrOchStall::Station::VERSION = '0.1200';
 use XML::Rabbit;
-#use syntax 'qs';
+use syntax 'qs';
 use Kavorka;
 
 has_xpath_value id => './x:Id';
@@ -38,7 +38,7 @@ method empty {
 }
 
 method to_text {
-    return sprintf qq{
+    return sprintf qs{
                 Id:             %s
                 Label:          %s
                 Latitude:       %s

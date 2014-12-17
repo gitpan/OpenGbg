@@ -10,6 +10,7 @@ cpanfile
 dist.ini
 examples/01-styr-och-stall.pl
 examples/02-airquality-1.pl
+examples/03-bridge.pl
 lib/OpenGbg.pm
 lib/OpenGbg/Exception.pm
 lib/OpenGbg/Exception/BadResponseFromService.pm
@@ -19,6 +20,11 @@ lib/OpenGbg/Service/AirQuality/GetLatestMeasurement.pm
 lib/OpenGbg/Service/AirQuality/GetMeasurements.pm
 lib/OpenGbg/Service/AirQuality/Measurement.pm
 lib/OpenGbg/Service/AirQuality/Measurements.pm
+lib/OpenGbg/Service/Bridge.pm
+lib/OpenGbg/Service/Bridge/BridgeOpening.pm
+lib/OpenGbg/Service/Bridge/BridgeOpenings.pm
+lib/OpenGbg/Service/Bridge/GetIsCurrentlyOpen.pm
+lib/OpenGbg/Service/Bridge/GetOpenedStatus.pm
 lib/OpenGbg/Service/Getter.pm
 lib/OpenGbg/Service/StyrOchStall.pm
 lib/OpenGbg/Service/StyrOchStall/GetBikeStation.pm
@@ -29,6 +35,7 @@ lib/OpenGbg/Standard/Moops.pm
 lib/OpenGbg/Types.pm
 t/01-styrochstall.t
 t/02-air-quality.t
+t/03-bridge.t
 t/author-no-tabs.t
 t/author-test-eol.t
 t/release-pod-syntax.t

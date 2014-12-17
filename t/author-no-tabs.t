@@ -24,6 +24,11 @@ my @files = (
     'lib/OpenGbg/Service/AirQuality/GetMeasurements.pm',
     'lib/OpenGbg/Service/AirQuality/Measurement.pm',
     'lib/OpenGbg/Service/AirQuality/Measurements.pm',
+    'lib/OpenGbg/Service/Bridge.pm',
+    'lib/OpenGbg/Service/Bridge/BridgeOpening.pm',
+    'lib/OpenGbg/Service/Bridge/BridgeOpenings.pm',
+    'lib/OpenGbg/Service/Bridge/GetIsCurrentlyOpen.pm',
+    'lib/OpenGbg/Service/Bridge/GetOpenedStatus.pm',
     'lib/OpenGbg/Service/Getter.pm',
     'lib/OpenGbg/Service/StyrOchStall.pm',
     'lib/OpenGbg/Service/StyrOchStall/GetBikeStation.pm',
@@ -33,7 +38,8 @@ my @files = (
     'lib/OpenGbg/Standard/Moops.pm',
     'lib/OpenGbg/Types.pm',
     't/01-styrochstall.t',
-    't/02-air-quality.t'
+    't/02-air-quality.t',
+    't/03-bridge.t'
 );
 
 notabs_ok($_) foreach @files;

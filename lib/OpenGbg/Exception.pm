@@ -3,7 +3,7 @@ use warnings;
 
 # Insired by Throwable::X
 package OpenGbg::Exception {
-$OpenGbg::Exception::VERSION = '0.1101';
+$OpenGbg::Exception::VERSION = '0.1200';
 use Moose::Role;
     use Throwable::X::Types;
 

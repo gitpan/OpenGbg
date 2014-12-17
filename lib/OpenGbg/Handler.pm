@@ -8,6 +8,7 @@ using Moose {
     use HTTP::Tiny;
     use Path::Tiny;
     use OpenGbg::Service::AirQuality;
+    use OpenGbg::Service::Bridge;
     use OpenGbg::Service::StyrOchStall;
 
     has config_file => (
@@ -36,6 +37,11 @@ using Moose {
         handles => ['get'],
     );
     has air_quality => (
+        is => 'ro',
+        lazy => 1,
+        builder => 1,
+    );
+    has bridge => (
         is => 'ro',
         lazy => 1,
         builder => 1,
@@ -73,6 +79,9 @@ using Moose {
     method _build_air_quality {
         return OpenGbg::Service::AirQuality->new(handler => $self);
     }
+    method _build_bridge {
+        return OpenGbg::Service::Bridge->new(handler => $self);
+    }
     method _build_styr_och_stall {
         return OpenGbg::Service::StyrOchStall->new(handler => $self);
     }
@@ -103,6 +112,11 @@ OpenGbg::Handler is the class from where calls to all web services are made.
 =head2 air_quality()
 
 Returns a L<OpenGbg::Service::AirQuality> object.
+
+
+=head2 bridge()
+
+Returns a L<OpenGbg::Service::Bridge> object.
 
 
 =head2 styr_och_stall()

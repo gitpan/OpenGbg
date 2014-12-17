@@ -1,5 +1,5 @@
 package OpenGbg;
-$OpenGbg::VERSION = '0.1101';
+$OpenGbg::VERSION = '0.1200';
 use 5.14.0;
 
 use OpenGbg::Handler;
