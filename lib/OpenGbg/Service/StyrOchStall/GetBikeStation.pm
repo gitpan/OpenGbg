@@ -1,7 +1,7 @@
 use 5.14.0;
 
 package OpenGbg::Service::StyrOchStall::GetBikeStation;
-$OpenGbg::Service::StyrOchStall::GetBikeStation::VERSION = '0.1200';
+$OpenGbg::Service::StyrOchStall::GetBikeStation::VERSION = '0.1201';
 use OpenGbg::Types -types;
 use Kavorka;
 use XML::Rabbit::Root;

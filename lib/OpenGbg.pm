@@ -1,5 +1,5 @@
 package OpenGbg;
-$OpenGbg::VERSION = '0.1200';
+$OpenGbg::VERSION = '0.1201';
 use 5.14.0;
 
 use OpenGbg::Handler;
@@ -66,6 +66,8 @@ Once you have your api key you can use it in two different ways:
 The following services are currently implemented in this distribution:
 
 L<AirQuality|OpenGbg::Service::AirQuality> - Data on air quality
+
+L<Bridge|OpenGbg::Service::Bridge> - Data on the openness of Göta Älvbron
 
 L<StyrOchStall|OpenGbg::Service::StyrOchStall> - Data on rent-a-bike stations
 

@@ -1,7 +1,7 @@
 use 5.14.0;
 
 package OpenGbg::Service::AirQuality::Measurement;
-$OpenGbg::Service::AirQuality::Measurement::VERSION = '0.1200';
+$OpenGbg::Service::AirQuality::Measurement::VERSION = '0.1201';
 use utf8;
 use syntax 'qs';
 use XML::Rabbit;

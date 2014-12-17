@@ -1,7 +1,7 @@
 use 5.14.0;
 
 package OpenGbg::Service::Bridge::GetOpenedStatus;
-$OpenGbg::Service::Bridge::GetOpenedStatus::VERSION = '0.1200';
+$OpenGbg::Service::Bridge::GetOpenedStatus::VERSION = '0.1201';
 use OpenGbg::Types -types;
 use XML::Rabbit::Root;
 use DateTime::Format::HTTP;

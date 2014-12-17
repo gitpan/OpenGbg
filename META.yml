@@ -41,4 +41,4 @@ requires:
   XML::LibXML: '0'
   XML::Rabbit: '0'
   perl: '5.014000'
-version: '0.1200'
+version: '0.1201'

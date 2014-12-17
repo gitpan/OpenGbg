@@ -1,7 +1,7 @@
 use 5.14.0;
 
 package OpenGbg::Service::StyrOchStall::Station;
-$OpenGbg::Service::StyrOchStall::Station::VERSION = '0.1200';
+$OpenGbg::Service::StyrOchStall::Station::VERSION = '0.1201';
 use XML::Rabbit;
 use syntax 'qs';
 use Kavorka;
