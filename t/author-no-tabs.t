@@ -35,11 +35,17 @@ my @files = (
     'lib/OpenGbg/Service/StyrOchStall/GetBikeStations.pm',
     'lib/OpenGbg/Service/StyrOchStall/Station.pm',
     'lib/OpenGbg/Service/StyrOchStall/Stations.pm',
+    'lib/OpenGbg/Service/TrafficCamera.pm',
+    'lib/OpenGbg/Service/TrafficCamera/CameraDevice.pm',
+    'lib/OpenGbg/Service/TrafficCamera/CameraDevices.pm',
+    'lib/OpenGbg/Service/TrafficCamera/GetCameraImage.pm',
+    'lib/OpenGbg/Service/TrafficCamera/GetTrafficCameras.pm',
     'lib/OpenGbg/Standard/Moops.pm',
     'lib/OpenGbg/Types.pm',
     't/01-styrochstall.t',
     't/02-air-quality.t',
-    't/03-bridge.t'
+    't/03-bridge.t',
+    't/04-traffic-camera.t'
 );
 
 notabs_ok($_) foreach @files;

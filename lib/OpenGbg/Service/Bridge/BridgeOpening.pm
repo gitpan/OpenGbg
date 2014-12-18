@@ -1,7 +1,7 @@
 use 5.14.0;
 
 package OpenGbg::Service::Bridge::BridgeOpening;
-$OpenGbg::Service::Bridge::BridgeOpening::VERSION = '0.1201';
+$OpenGbg::Service::Bridge::BridgeOpening::VERSION = '0.1300';
 use XML::Rabbit;
 use DateTime;
 use Kavorka;

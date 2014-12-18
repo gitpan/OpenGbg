@@ -1,7 +1,7 @@
 use 5.14.0;
 
 package OpenGbg::Service::AirQuality::GetLatestMeasurement;
-$OpenGbg::Service::AirQuality::GetLatestMeasurement::VERSION = '0.1201';
+$OpenGbg::Service::AirQuality::GetLatestMeasurement::VERSION = '0.1300';
 use OpenGbg::Types -types;
 use Kavorka;
 use XML::Rabbit::Root;

@@ -1,5 +1,12 @@
 Revision history for OpenGbg
 
+0.1300 2014-12-18T01:31:19Z CET
+ [Meta]
+ - Linked Github repo/issues.
+
+ [New Features]
+ - Implemented Traffic Camera service.
+
 0.1201 2014-12-17T02:13:06Z CET
  [Documentation]
  - Added link to the Bridge service.

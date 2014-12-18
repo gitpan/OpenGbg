@@ -1,5 +1,5 @@
 package OpenGbg;
-$OpenGbg::VERSION = '0.1201';
+$OpenGbg::VERSION = '0.1300';
 use 5.14.0;
 
 use OpenGbg::Handler;
@@ -70,6 +70,8 @@ L<AirQuality|OpenGbg::Service::AirQuality> - Data on air quality
 L<Bridge|OpenGbg::Service::Bridge> - Data on the openness of Göta Älvbron
 
 L<StyrOchStall|OpenGbg::Service::StyrOchStall> - Data on rent-a-bike stations
+
+L<TrafficCamera|OpenGbg::Service::TrafficCamera> - Data on traffic cameras, and their images
 
 =head1 NAMING
 

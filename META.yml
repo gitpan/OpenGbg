@@ -41,4 +41,8 @@ requires:
   XML::LibXML: '0'
   XML::Rabbit: '0'
   perl: '5.014000'
-version: '0.1201'
+resources:
+  bugtracker: https://github.com/Csson/p5-OpenGbg/issues
+  homepage: https://github.com/Csson/p5-OpenGbg
+  repository: https://github.com/Csson/p5-OpenGbg.git
+version: '0.1300'
